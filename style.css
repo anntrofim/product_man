@@ -1,0 +1,112 @@
+body {
+	background-color: #eeeeee;
+}
+
+.header {
+	width: 60%;
+	margin: 0 auto;
+	padding: 10px 0;
+	position: relative;
+	color: #303030;
+}
+
+.header__logo {
+	font-family: 'Roboto', sans-serif;
+}
+
+.header__nav {
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header__ref {
+	padding: 0 15px;
+	text-decoration: none;
+	color: #303030;
+}
+
+.header__burger {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*==================================================*/
+
+.product {
+	width: 60%;
+	height: 400px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.product__content {
+	font-family: 'Roboto', sans-serif;
+	width: 50%;
+	height: 80%;
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+}
+
+.product__title {
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 90px;
+	line-height: 1;
+	margin-bottom: 0;
+	color: #303030;
+	margin-top: 0;
+}
+
+.product__txt {
+	display: inline-block;
+	text-align: right;
+	width: 85%;
+	height: 60px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.product__btn {
+	border: none;
+	color: #e10011;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.product__slider {
+	width: 10%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+	margin: auto;
+	text-align: center;
+}
+
+.product__dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #464646;
+}
+
+.product__view {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	width: 50%;
+	height: 80%;
+	background: url(images/product.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/*==================================================*/
+
