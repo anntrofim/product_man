@@ -11,6 +11,7 @@ body {
 }
 
 .header__logo {
+	cursor: pointer;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -39,7 +40,7 @@ body {
 .product {
 	width: 60%;
 	height: 400px;
-	margin: 40px auto;
+	margin: 30px auto;
 	position: relative;
 }
 
@@ -50,6 +51,8 @@ body {
 	display: inline-block;
 	text-align: right;
 	position: absolute;
+	z-index: 1;
+
 }
 
 .product__title {
@@ -77,6 +80,12 @@ body {
 	color: #e10011;
 	font-weight: bold;
 	background-color: transparent;
+	transition: all .5s ease;
+}
+
+.product__btn:hover {
+	font-size: 17px;
+	transition: all .5s ease;
 }
 
 .product__slider {
@@ -97,6 +106,11 @@ body {
 	background-color: #464646;
 }
 
+.product__dot:hover {
+	background-color: #e10011;
+	cursor: pointer;
+}
+
 .product__view {
 	position: absolute;
 	right: 0;
@@ -106,6 +120,207 @@ body {
 	background: url(images/product.png) no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	transition: all .5s ease;
+}
+
+.product__view:hover {
+	width: 55%;
+	height: 85%;
+	transition: all .5s ease;
+}
+
+/*==================================================*/
+
+.gallery {
+	width: 60%;
+	height: 750px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	color: #303030;
+}
+
+.gallery__title {
+	text-align: center;
+	margin-bottom: 0;
+	padding: 50px 0 5px;
+}
+
+.gallery__uline {
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+}
+
+.gallery__txt {
+	margin: 5px auto 40px;
+	width: 60%;
+}
+
+.gallery__views {
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	height: 69%;
+}
+
+.gallery__view1 {
+	overflow: hidden;
+	display: inline-block;
+	width: 65%;
+	height: 47%;
+	margin-right: 32px;
+	margin-bottom: 32px;
+	background-color: #eeeeee;
+}
+
+.gallery__view2 {
+	overflow: hidden;
+	display: inline-block;
+	width: 30%;
+	height: 47%;
+	margin-bottom: 32px;
+	background-color: #eeeeee;
+}
+
+.gallery__view3 {
+	overflow: hidden;
+	display: inline-block;
+	width: 30%;
+	height: 47%;
+	margin-right: 32px;
+	background-color: #eeeeee;
+}
+
+.gallery__view4 {
+	overflow: hidden;
+	display: inline-block;
+	width: 30%;
+	height: 47%;
+	margin-right: 32px;
+	background-color: #eeeeee;
+}
+
+.gallery__view5 {
+	overflow: hidden;
+	display: inline-block;
+	width: 30%;
+	height: 47%;
+	background-color: #eeeeee;
+}
+
+.gallery__img1 {
+	background: url(images/gall_prod_1.png) no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery__img2 {
+	background: url(images/gall_prod_2.png) no-repeat;
+	background-size: 125%;
+	background-position: bottom;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery__img3 {
+	background: url(images/gall_prod_3.png) no-repeat;
+	background-size: 190%;
+	background-position: left;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery__img4 {
+	background: url(images/gall_prod_4.png) no-repeat;
+	background-size: 180%;
+	background-position: right;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery__img5 {
+	background: url(images/gall_prod_5.png) no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+/*----------------------------*/
+
+.gallery__img1:hover {
+	background: #e10011;
+	transition: all .5s ease;
+	position: relative;
+}
+
+.gallery__img2:hover {
+	background: #e10011;
+	transition: all .5s ease;
+	position: relative;
+}
+
+.gallery__img3:hover {
+	background: #e10011;
+	transition: all .5s ease;
+	position: relative;
+}
+
+.gallery__img4:hover {
+	background: #e10011;
+	transition: all .5s ease;
+	position: relative;
+}
+
+.gallery__img5:hover {
+	background: #e10011;
+	transition: all .5s ease;
+	position: relative;
+}
+
+.gallery__description {
+	display: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: #ffffff;
+	font-size: 20px;
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+}
+
+.gallery__description--ulined {
+	border-bottom: 2px solid;
+	padding-bottom: 5px;
+}
+
+.gallery__img1:hover .gallery__description {
+	display: inherit;
+}
+
+.gallery__img2:hover .gallery__description {
+	display: inherit;
+}
+
+.gallery__img3:hover .gallery__description {
+	display: inherit;
+}
+
+.gallery__img4:hover .gallery__description {
+	display: inherit;
+}
+
+.gallery__img5:hover .gallery__description {
+	display: inherit;
 }
 
 /*==================================================*/
