@@ -11,6 +11,7 @@ body {
 }
 
 .header__logo {
+	width: 22%;
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;
 }
@@ -30,6 +31,7 @@ body {
 
 .header__burger {
 	position: absolute;
+	cursor: pointer;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
@@ -81,6 +83,7 @@ body {
 	font-weight: bold;
 	background-color: transparent;
 	transition: all .5s ease;
+	outline: none;
 }
 
 .product__btn:hover {
@@ -118,14 +121,14 @@ body {
 	width: 50%;
 	height: 80%;
 	background: url(images/product.png) no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	overflow: hidden;
+	cursor: pointer;
 	transition: all .5s ease;
 }
 
 .product__view:hover {
-	width: 55%;
-	height: 85%;
+	background-size: 110%;
 	transition: all .5s ease;
 }
 
@@ -154,8 +157,11 @@ body {
 }
 
 .gallery__txt {
+	text-align: center;
 	margin: 5px auto 40px;
-	width: 60%;
+	width: 55%;
+	font-size: 14px;
+
 }
 
 .gallery__views {
@@ -172,6 +178,8 @@ body {
 	height: 47%;
 	margin-right: 32px;
 	margin-bottom: 32px;
+	margin-right: 4%;
+	margin-bottom: 4%;
 	background-color: #eeeeee;
 }
 
@@ -181,6 +189,7 @@ body {
 	width: 30%;
 	height: 47%;
 	margin-bottom: 32px;
+	margin-bottom: 4%;
 	background-color: #eeeeee;
 }
 
@@ -190,6 +199,7 @@ body {
 	width: 30%;
 	height: 47%;
 	margin-right: 32px;
+	margin-right: 4%;
 	background-color: #eeeeee;
 }
 
@@ -199,6 +209,7 @@ body {
 	width: 30%;
 	height: 47%;
 	margin-right: 32px;
+	margin-right: 4.5%;
 	background-color: #eeeeee;
 }
 
@@ -259,31 +270,31 @@ body {
 
 .gallery__img1:hover {
 	background: #e10011;
-	transition: all .5s ease;
+	transition: all 1s ease;
 	position: relative;
 }
 
 .gallery__img2:hover {
 	background: #e10011;
-	transition: all .5s ease;
+	transition: all 1s ease;
 	position: relative;
 }
 
 .gallery__img3:hover {
 	background: #e10011;
-	transition: all .5s ease;
+	transition: all 1s ease;
 	position: relative;
 }
 
 .gallery__img4:hover {
 	background: #e10011;
-	transition: all .5s ease;
+	transition: all 1s ease;
 	position: relative;
 }
 
 .gallery__img5:hover {
 	background: #e10011;
-	transition: all .5s ease;
+	transition: all 1s ease;
 	position: relative;
 }
 
@@ -323,5 +334,145 @@ body {
 	display: inherit;
 }
 
+.gallery__img1:active {
+	background: #84000a;
+	transition: all 0s ease;
+}
+
+.gallery__img2:active {
+	background: #84000a;
+	transition: all 0s ease;
+}
+
+.gallery__img3:active {
+	background: #84000a;
+	transition: all 0s ease;
+}
+
+.gallery__img4:active {
+	background: #84000a;
+	transition: all 0s ease;
+}
+
+.gallery__img5:active {
+	background: #84000a;
+	transition: all 0s ease;
+}
+
 /*==================================================*/
+
+.contact {
+	width: 60%;
+	margin: 60px auto;
+}
+
+.contact__title {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.contact__txt {
+	font-family: 'Raleway', sans-serif;
+	width: 55%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.contact__input {
+	position: relative;
+	width: 70%;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+.contact__email {
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	border: none;
+	width: 50%;
+	padding: 15px 40px;
+	border-radius: 30px 0 0 30px;
+	outline: none;
+}
+
+.contact__btn {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #ffffff;
+	border: none;
+	background-color: #e10011;
+	border-radius: 0 30px 30px 0;
+	padding: 15px 40px;
+	outline: none;
+	transition: all .3s ease;
+}
+
+.contact__btn:active {
+	background-color: #84000a;
+}
+
+/*==================================================*/
+
+.footer {
+	padding: 20px;
+	margin-top: 30px;
+	font-family: 'Raleway', sans-serif;
+	color: #979797;
+	text-align: center;
+}
+
+.footer__socials {
+	width: 30%;
+	height: 50px;
+	margin: 0 auto 50px;
+}
+
+.footer__logo {
+	cursor: pointer;
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	filter: grayscale(100%);
+	transition: all .3s ease;
+}
+
+.footer__logo:hover {
+	filter: grayscale(0%);
+	transition: all .3s ease;
+}
+
+.footer__fb {
+	background: url(images/fb-h.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer__tw {
+	background: url(images/tw-h.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer__yt {
+	background: url(images/yt-h.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer__me {
+	background: url(images/me-h.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer__ref {
+	color: #303030;
+	text-decoration: none;
+}
 
